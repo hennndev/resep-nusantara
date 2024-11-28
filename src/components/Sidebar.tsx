@@ -1,4 +1,3 @@
-import React from 'react'
 import clsx from 'clsx'
 import { IoMdHeart } from "react-icons/io"
 import { PiBowlFood } from "react-icons/pi"

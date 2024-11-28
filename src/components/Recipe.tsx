@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BiShare, BiSolidShare  } from "react-icons/bi"
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai"
@@ -14,7 +14,7 @@ const Recipe = ({data}: PropsTypes) => {
     const { addRecipe, favoriteRecipes, deleteRecipe } = useFavoriteRecipesStore()
     const [isHoveredIcon2, setIsHoveredIcon2] = useState<boolean>(false)
 
-    const isRecipeFavorite = favoriteRecipes.find(recipe => recipe.id === data.id)
+    const isRecipeFavorite = favoriteRecipes.find((recipe: RecipeTypes) => recipe.id === data.id)
 
     const handleRecipeAction = (recipe: RecipeTypes) => {
         if(isRecipeFavorite) {

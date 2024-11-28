@@ -1,4 +1,3 @@
-import React from 'react'
 import Home from './pages/Home'
 import Favorite from './pages/Favorite'
 import Header from './components/Header'
